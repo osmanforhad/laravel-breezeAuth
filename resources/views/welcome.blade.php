@@ -101,6 +101,15 @@
                     </div>
                 </div>
 
+                  <!-- @php
+            if(Auth::check()) {
+                echo "Yes Loggedin!!";
+            }
+            @endphp -->
+            @if(Auth::check())
+            <b>Yes You are Loggedin</b>
+            @endif
+
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 sm:text-left">
                         <div class="flex items-center">
